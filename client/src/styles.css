@@ -1,0 +1,72 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("assets/fonts/Roboto-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url("assets/fonts/Roboto-Medium.ttf") format('truetype');
+}
+/*-----------------------------------------------------------------*/
+/*-------------------Переопределение materialize------------------*/
+body, button, input, optgroup, select, textarea {
+  font-family: 'Roboto-Regular', sans-serif;
+}
+.btn, .btn-large, .btn-small{
+  background-color: #2d1c2b !important;
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover {
+  background-color: #590652 !important;
+}
+
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=url]:not(.browser-default):focus:not([readonly])+label,
+input[type=time]:not(.browser-default):focus:not([readonly])+label,
+input[type=date]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+  color: #590652;
+}
+
+input:not([type]).invalid:focus:not([readonly])+label,
+input[type=text].invalid:not(.browser-default):focus:not([readonly])+label,
+input[type=password].invalid:not(.browser-default):focus:not([readonly])+label,
+input[type=email].invalid:not(.browser-default):focus:not([readonly])+label,
+input[type=url].invalid:not(.browser-default):focus:not([readonly])+label,
+input[type=time].invalid:not(.browser-default):focus:not([readonly])+label,
+input[type=date].invalid:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime].invalid:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local].invalid:not(.browser-default):focus:not([readonly])+label,
+input[type=tel].invalid:not(.browser-default):focus:not([readonly])+label,
+input[type=number].invalid:not(.browser-default):focus:not([readonly])+label,
+input[type=search].invalid:not(.browser-default):focus:not([readonly])+label,
+textarea.invalid.materialize-textarea:focus:not([readonly])+label{
+  color: #F44336;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #590652;
+  -webkit-box-shadow: 0 1px 0 0 #590652;
+  box-shadow: 0 1px 0 0 #590652;
+}
+
